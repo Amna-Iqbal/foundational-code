@@ -1,0 +1,57 @@
+body{
+    margin:10;
+    padding:0;
+    color:white;
+    background-color: rgb(5, 28, 36);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+span {
+    color: rgb(116, 198, 172);
+}
+hr {
+    width: 60%; 
+    max-width: 500px;
+    margin-top:15px;
+}
+button {
+    background-color: rgb(54, 135, 110);
+    color:white;
+    border:none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em;
+    
+
+}
+button:hover {
+    background-color: rgb(116, 198, 172);
+    color: rgb(5, 28, 36);
+    font-weight: 700;
+    
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    margin:30px;
+    height: 100vh;
+   
+
+}
+.password {
+    width: 192px;
+    padding:5px;
+    color:rgb(116, 198, 172);
+    background-color: rgb(17, 53, 65);
+    border-radius: 3px;
+    margin-bottom:10px;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}

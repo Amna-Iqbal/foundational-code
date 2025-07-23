@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            border: 2px solid whitesmoke;
+            color: white;
+            font-family: "Orbitron", sans-serif;
+            border-radius: 5px;
+            text-align: center;
+            width: 80vh;
+            margin: auto;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 20px;
+            background-color: rgb(5, 18, 46);
+        }
+
+        .col {
+            padding: 5px;
+        }
+
+        button {
+            border: 1px solid white;
+            margin: 3px 3px;
+            border-radius: 2px;
+            padding: 8px 10px;
+            background-color: transparent;
+            cursor: pointer;
+            color: white
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .display {
+            border-radius: 5px;
+            background: #0a0001;
+            font-size: 90px;
+            color: #F94F6D;
+            width: 120px;
+            margin: 20px;
+        }
+        #reset-btn {
+            border: 1px solid white;
+            margin: 3px 3px;
+            border-radius: 2px;
+            padding: 8px 10px;
+            background-color: whitesmoke;
+            cursor: pointer;
+            color: rgb(5, 18, 46);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <h1>HOME</h1>
+            <h2 id="home-score" class="display">0</h2>
+            <button onclick="add1home()">+1</button>
+            <button onclick="add2home()">+2</button>
+            <button onclick="add3home()">+3</button>
+        </div>
+        <div class="col">
+            <h1>GUEST</h1>
+            <h2 id="guest-score" class="display">0</h2>
+            <button onclick="add1guest()">+1</button>
+            <button onclick="add2guest()">+2</button>
+            <button onclick="add3guest()">+3</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <button id = "reset-btn" onclick="reset()">RESET</button>
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+
+</html>
