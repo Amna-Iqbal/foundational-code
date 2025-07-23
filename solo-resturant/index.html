@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Jimmy's Diner</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Jimmy's Diner</h1>
+        <h2>The best burgers and pizzas in town.</h2>
+      </div>
+    </header>
+    <main>
+      <section class="container" id="container">
+        <!-- Menu here-->
+      </section>
+      <section class="cart" id="cart">
+        
+        <!-- Added Items will render here -->
+      </section>
+      <section class="modal" id="modal">
+        <form id="pay-form">
+          <h2>Enter card Details</h2>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            aria-label="Enter your name."
+            id="name"
+            name="name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Enter card number"
+            aria-label="Enter card number."
+            id="cardnumber"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Enter CVV"
+            aria-label="Enter CVV."
+            id="cvv"
+            pattern="[0-9]{3,4}"
+            maxlength="4"
+            required
+          />
+          <button type="submit" class="btn">Pay</button>
+        </form>
+      </section>
+      <!-- <section class="feedback-modal" id="feedback-modal">
+        <form id="feedback-form">
+          <h2>Feedback</h2>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+            placeholder="Enter your feedback here..."
+            required
+          ></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section> -->
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

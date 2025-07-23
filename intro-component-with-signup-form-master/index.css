@@ -1,0 +1,143 @@
+/* Mobile First Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: hsl(0, 100%, 74%) url("./images/bg-intro-mobile.png");
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+  min-width:300px;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3em;
+}
+.cta-text {
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  font-size: 0.9rem;
+  padding: 1em 1em;
+  border-radius: 5px;
+  box-shadow: 0px 5px #88878785;
+}
+span {
+  font-weight: 600;
+}
+
+.fine-print {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: hsl(246, 25%, 77%);
+}
+.fine-print a {
+  color: hsl(0, 100%, 74%);
+}
+/* =================
+    Flex containers
+   ================= */
+   .intro,
+   .main-content {
+    max-width: 500px;
+    margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-left: 1.3rem;
+     padding-right: 1.3rem;
+   }
+/* ====================
+    Main content
+   ==================== */
+
+/* =================
+    Form
+   ================= */
+   form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.8em;
+    width:100%;
+    margin-bottom:0.8em;
+  }
+input, button {
+  font-family: inherit;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 5px;
+}
+input {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 0.5px solid hsl(246, 25%, 77%);
+}
+input:focus {
+  outline: none;
+  border: 1px solid hsl(248, 32%, 49%);
+}
+button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  padding: 1em 0;
+  border: none;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 5px #2ea974;
+  cursor:pointer;
+  
+}
+
+/* =================
+    Input Validation
+   ================= */
+.error-msg{
+  display:none;
+  color:red;
+  font-size: .7rem;
+  text-align: right;
+  font-style: italic;
+  margin-top: 0;
+}
+.input-wrapper{
+  position: relative;
+}
+.error-icon {
+  position: absolute;
+  right: 10px;
+  top: 31%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+/* =================
+    Media Query for Desktop
+   ================= */
+@media(min-width:800px ){
+  body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 7em;
+    background: hsl(0, 100%, 74%) url("./images/bg-intro-desktop.png");
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+  .intro {
+    text-align: left;
+  }
+  
+}
