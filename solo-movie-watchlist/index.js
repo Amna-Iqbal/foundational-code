@@ -19,7 +19,7 @@ searchBtn.addEventListener("click", function(){
 })
 
 let searchMovies = (searchInput) => {
-  fetch(`https://www.omdbapi.com/?apikey=a41de663&s=${searchInput}`)
+  fetch(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=${searchInput}`)
     .then((response) => 
       response.json())
     .then((data) => {
@@ -58,7 +58,7 @@ document.addEventListener("click", function (e) {
 
 
 function renderMovieById(movieId) {
-  fetch(`https://www.omdbapi.com/?apikey=a41de663&i=${movieId}`)
+  fetch(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&i=${movieId}`)
     .then((response) => response.json())
     .then((data) => {
       moviesContainer.classList.add("showresult");
